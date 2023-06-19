@@ -7,12 +7,15 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
-
+import { Favorites } from "./views/favorites";
+import { Top } from "./views/top";
+import { Bottom } from "./views/bottom";
 import { Footer } from "./component/footer";
 import Navbar from "./component/navbar";
-import App from "./component/App";
-import { Login } from "./component/Login";
-import { Register } from "./component/Register";
+import Sidebar from "./component/sidebar";
+import App from "./views/App";
+import { Login } from "./views/Login";
+import { Register } from "./views/Register";
 
 
 
@@ -31,7 +34,7 @@ const Layout = () => {
 				
 				<ScrollToTop>
 					<Navbar />
-					
+					<Sidebar/>
 					
 					<Routes>
 						
@@ -39,6 +42,9 @@ const Layout = () => {
 						<Route path="/App" element={<App />} />
 						<Route path="/login" element={<Login />} />
 						<Route path="/register" element={<Register />} />
+						<Route path="/favorites" element={<Favorites />} />
+						<Route path="/top" element={<Top />} />
+						<Route path="/bottom" element={<Bottom />} />
 						<Route path="/demo" element={<Demo />} />
 						<Route path="/single/:theid" element={<Single />} />
 						<Route path="*" element={<h1>Not found!</h1>} />

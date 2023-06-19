@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Login } from "./Login";
 import { Link } from "react-router-dom";
-import  "./register.css";
+import "../../styles/register.css";
 
 export const Register = (props) => {
     const [email, setEmail] = useState('');

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form } from "react-router-dom";
 import { Link } from "react-router-dom";
-import  "./register.css";
+import "../../styles/register.css";
 
 export const Login = (props) => {
     const [email, setEmail] = useState('');
