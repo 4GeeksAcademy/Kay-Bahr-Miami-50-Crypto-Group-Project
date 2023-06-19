@@ -2,7 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './navbar.css';
 
+
 export const Navbar = () => {
+	
+
+	
+		
 	return (
 		<nav className="navbar">
 			<div className="leftSide">
@@ -14,8 +19,9 @@ export const Navbar = () => {
 				<input className="search" type="text" placeholder="Search Coins..."/>
 				<button>Search</button>
 				<div className="loginButton ml-auto">
-					<Link to="/Login">
-						<button className="btn btn-primary">Login</button>
+					<Link to="/login"> 
+						<button>Login Cryptotart</button>
+
 					</Link>
 				</div>
 			</div>
